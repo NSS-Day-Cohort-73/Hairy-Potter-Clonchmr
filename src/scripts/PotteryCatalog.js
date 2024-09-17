@@ -1,4 +1,4 @@
-const potteryToBeSold = []
+let potteryToBeSold = []
 
 //if weight is >= 6 add price property with value of 40
 
@@ -10,7 +10,9 @@ const potteryToBeSold = []
 
 
 
-const toSellOrNotToSell = (potObj) => {
+export const toSellOrNotToSell = (potObj) => {
+
+    
 
     if (potObj.weight >= 6 && potObj.cracked === false) {
         potObj.price = 40
@@ -23,9 +25,9 @@ const toSellOrNotToSell = (potObj) => {
     return potObj
 }
 
-const usePottery = () => {
+export const usePottery = () => {
     let potteryMenu = potteryToBeSold.slice()
     return potteryMenu;
 }
 
-module.exports = {toSellOrNotToSell}
+

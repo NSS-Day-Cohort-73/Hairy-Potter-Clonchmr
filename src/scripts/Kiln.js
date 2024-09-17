@@ -1,4 +1,4 @@
- const firePottery = (potObj, temp) => {
+ export const firePottery = (potObj, temp) => {
     let isCracked = false
     
     potObj.fired = true
@@ -11,4 +11,3 @@
 return potObj
 }
 
-module.exports = {firePottery}
